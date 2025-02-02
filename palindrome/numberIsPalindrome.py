@@ -31,7 +31,7 @@ overflow and unnecesaary computations.
 
 def isPalindrome(n):
 
-    if n < 0 or (n % 10 == 0 and n != 0):
+    if n < 0 or (n % 10 == 0 and n != 0):   # Negative numbers & multiples of 10 (except 0) aren't palindromes
         return False
     reversed_half = 0
     while n > reversed_half:
